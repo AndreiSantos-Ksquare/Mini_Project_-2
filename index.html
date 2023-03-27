@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mini Project #2</title>
+        <style> @import url("styles.css"); </style>
+    </head>
+    <body>
+        <header>
+            <section class="flex-row width-xlg">
+                <h1 id="headerTitle" class="header-title">Mini Project #2</h1>
+            </section>
+        </header>
+
+        <main>
+            <section id="mainContent" class="grid-main-template">
+                <section id="pokemonContent" class="grid-pokedex-content">
+                    <section id="searchSection" class="grid-search">
+                        <input id="buttonSearch" type="button" onclick="searchPokemon()"
+                            class="button-search" value="Search">
+                        <input id="inputSearch" type="text"
+                            class="input-search" required placeholder="Search for a Pokemon">
+                        <section></section>
+                        <input id="buttonClear" type="button" onclick="clearSearch()"
+                            class="button-clear hiden" value="Clear">
+                    </section>
+
+                    <section id="pokemonCardsGrid" class="grid-pokemon-cards">
+                        <section class="pokemon-card flex-column">
+                            <img id="imgP1" class="img" src="" alt="">
+                            <section class="flex-row">
+                                <p class="tag">name</p>
+                                <p id="nameP1" class="value">name</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">type</p>
+                                <p id="typeP1" class="value">type</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">hp</p>
+                                <p id="hpP1" class="value">hp</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">attack</p>
+                                <p id="attackP1" class="value">attack</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">defense</p>
+                                <p id="defenseP1" class="value">defense</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">speed</p>
+                                <p id="speedP1" class="value">speed</p>
+                            </section>
+                        </section>
+                        <section class="pokemon-card flex-column">
+                            <img id="imgP2" class="img" src="" alt="">
+                            <section class="flex-row">
+                                <p class="tag">name</p>
+                                <p id="nameP2" class="value">name</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">type</p>
+                                <p id="typeP2" class="value">type</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">hp</p>
+                                <p id="hpP2" class="value">hp</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">attack</p>
+                                <p id="attackP2" class="value">attack</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">defense</p>
+                                <p id="defenseP2" class="value">defense</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">speed</p>
+                                <p id="speedP2" class="value">speed</p>
+                            </section>
+                        </section>
+                        <section class="pokemon-card flex-column">
+                            <img id="imgP3" class="img" src="" alt="">
+                            <section class="flex-row">
+                                <p class="tag">name</p>
+                                <p id="nameP3" class="value">name</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">type</p>
+                                <p id="typeP3" class="value">type</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">hp</p>
+                                <p id="hpP3" class="value">hp</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">attack</p>
+                                <p id="attackP3" class="value">attack</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">defense</p>
+                                <p id="defenseP3" class="value">defense</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">speed</p>
+                                <p id="speedP3" class="value">speed</p>
+                            </section>
+                        </section>
+                        <section class="pokemon-card flex-column">
+                            <img id="imgP4" class="img" src="" alt="">
+                            <section class="flex-row">
+                                <p class="tag">name</p>
+                                <p id="nameP4" class="value">name</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">type</p>
+                                <p id="typeP4" class="value">type</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">hp</p>
+                                <p id="hpP4" class="value">hp</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">attack</p>
+                                <p id="attackP4" class="value">attack</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">defense</p>
+                                <p id="defenseP4" class="value">defense</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">speed</p>
+                                <p id="speedP4" class="value">speed</p>
+                            </section>
+                        </section>
+                        <section class="pokemon-card flex-column">
+                            <img id="imgP5" class="img" src="" alt="">
+                            <section class="flex-row">
+                                <p class="tag">name</p>
+                                <p id="nameP5" class="value">name</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">type</p>
+                                <p id="typeP5" class="value">type</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">hp</p>
+                                <p id="hpP5" class="value">hp</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">attack</p>
+                                <p id="attackP5" class="value">attack</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">defense</p>
+                                <p id="defenseP5" class="value">defense</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">speed</p>
+                                <p id="speedP5" class="value">speed</p>
+                            </section>
+                        </section>
+                        <section class="pokemon-card flex-column">
+                            <img id="imgP6" class="img" src="" alt="">
+                            <section class="flex-row">
+                                <p class="tag">name</p>
+                                <p id="nameP6" class="value">name</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">type</p>
+                                <p id="typeP6" class="value">type</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">hp</p>
+                                <p id="hpP6" class="value">hp</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">attack</p>
+                                <p id="attackP6" class="value">attack</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">defense</p>
+                                <p id="defenseP6" class="value">defense</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">speed</p>
+                                <p id="speedP6" class="value">speed</p>
+                            </section>
+                        </section>
+                        <section class="pokemon-card flex-column">
+                            <img id="imgP7" class="img" src="" alt="">
+                            <section class="flex-row">
+                                <p class="tag">name</p>
+                                <p id="nameP7" class="value">name</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">type</p>
+                                <p id="typeP7" class="value">type</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">hp</p>
+                                <p id="hpP7" class="value">hp</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">attack</p>
+                                <p id="attackP7" class="value">attack</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">defense</p>
+                                <p id="defenseP7" class="value">defense</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">speed</p>
+                                <p id="speedP7" class="value">speed</p>
+                            </section>
+                        </section>
+                        <section class="pokemon-card flex-column">
+                            <img id="imgP8" class="img" src="" alt="">
+                            <section class="flex-row">
+                                <p class="tag">name</p>
+                                <p id="nameP8" class="value">name</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">type</p>
+                                <p id="typeP8" class="value">type</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">hp</p>
+                                <p id="hpP8" class="value">hp</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">attack</p>
+                                <p id="attackP8" class="value">attack</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">defense</p>
+                                <p id="defenseP8" class="value">defense</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">speed</p>
+                                <p id="speedP8" class="value">speed</p>
+                            </section>
+                        </section>
+                        <section class="pokemon-card flex-column">
+                            <img id="imgP9" class="img" src="" alt="">
+                            <section class="flex-row">
+                                <p class="tag">name</p>
+                                <p id="nameP9" class="value">name</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">type</p>
+                                <p id="typeP9" class="value">type</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">hp</p>
+                                <p id="hpP9" class="value">hp</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">attack</p>
+                                <p id="attackP9" class="value">attack</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">defense</p>
+                                <p id="defenseP9" class="value">defense</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">speed</p>
+                                <p id="speedP9" class="value">speed</p>
+                            </section>
+                        </section>
+                        <section class="pokemon-card flex-column">
+                            <img id="imgP10" class="img" src="" alt="">
+                            <section class="flex-row">
+                                <p class="tag">name</p>
+                                <p id="nameP10" class="value">name</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">type</p>
+                                <p id="typeP10" class="value">type</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">hp</p>
+                                <p id="hpP10" class="value">hp</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">attack</p>
+                                <p id="attackP10" class="value">attack</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">defense</p>
+                                <p id="defenseP10" class="value">defense</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">speed</p>
+                                <p id="speedP10" class="value">speed</p>
+                            </section>
+                        </section>
+                        <section class="pokemon-card flex-column">
+                            <img id="imgP11" class="img" src="" alt="">
+                            <section class="flex-row">
+                                <p class="tag">name</p>
+                                <p id="nameP11" class="value">name</p>
+                            </section>
+                            <section class="flex-row">
+                                <p>type</p>
+                                <p id="typeP11" class="value">type</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">hp</p>
+                                <p id="hpP11" class="value">hp</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">attack</p>
+                                <p id="attackP11" class="value">attack</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">defense</p>
+                                <p id="defenseP11" class="value">defense</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">speed</p>
+                                <p id="speedP11" class="value">speed</p>
+                            </section>
+                        </section>
+                        <section class="pokemon-card flex-column">
+                            <img id="imgP12" class="img" src="" alt="">
+                            <section class="flex-row">
+                                <p class="tag">name</p>
+                                <p id="nameP12" class="value">name</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">type</p>
+                                <p id="typeP12" class="value">type</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">hp</p>
+                                <p id="hpP12" class="value">hp</p>
+                            </section>
+                            <section class="flex-row">
+                                <p>attack</p>
+                                <p id="attackP12" class="value">attack</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">defense</p>
+                                <p id="defenseP12" class="value">defense</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">speed</p>
+                                <p id="speedP12" class="value">speed</p>
+                            </section>
+                        </section>
+                    </section>
+
+                    
+
+                    <section id="pokemonCardGrid" class="grid-pokemon-card hiden">
+                        <section class="pokemon-card flex-column">
+                            <img id="imgP13" class="img-1" src="" alt="">
+                            <section class="flex-row">
+                                <p class="tag">name</p>
+                                <p id="nameP13" class="value">name</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">type</p>
+                                <p id="typeP13" class="value">type</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">hp</p>
+                                <p id="hpP13" class="value">hp</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">attack</p>
+                                <p id="attackP13" class="value">attack</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">defense</p>
+                                <p id="defenseP13" class="value">defense</p>
+                            </section>
+                            <section class="flex-row">
+                                <p class="tag">speed</p>
+                                <p id="speedP13" class="value">speed</p>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </main>
+        <script src="app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,206 @@
+:root {
+    --twitterIcon: url("assets/twitter.svg");
+    --whiteColor: white;
+    --blackColor: black;
+    --buttonColor: #005ba5;
+    --gray: #3f3f3f;
+}
+
+html {
+    display: flex;
+    flex-flow: column;
+    background-color:var(--blackColor);
+    color: var(--whiteColor);
+    width: 100%;
+    height: 100%;
+}
+
+/* body containers */
+body {
+    place-items: center;
+    align-items: center;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 90%;
+}
+
+header {
+    align-items: center;
+    display: grid;
+    width: 90%;
+    height: 100%;
+    padding: 24px 0px 24px 0px;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+}
+
+main {
+    place-items: center;
+    align-items: center;
+    display: grid;
+    background-color: var(--whiteColor);
+    color: var(--blackColor);
+    border-radius: 16px;
+    width: 90%;
+    height: 90%;
+    padding: 0;
+    margin: 0;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+
+}
+
+* {
+    border: solid;
+}
+
+/* flex */
+.flex-column {
+    box-sizing: content-box;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.flex-row {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+}
+
+/* margin */
+.margin-right {
+    margin-right: 16px;
+}
+
+.margin-left {
+    margin-left: 16px;
+}
+
+/* grid templates */
+.grid-main-template {
+    place-items: center;
+    align-items: center;
+    display: grid;
+    width: 95%;
+    height: 95%;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+}
+
+.grid-pokedex-content {
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    width: 95%;
+    height: 95%;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 85%;
+}
+
+.grid-search {
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 50% 50%;
+}
+
+.grid-pokemon-cards {
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.grid-pokemon-card {
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    width: 30%;
+    height: 40%;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+}
+
+/* content styles */
+.button-search {
+    justify-self: left;
+    width: 95%;
+    height: 95%;
+    border-radius: 6px;
+    color: var(--whiteColor);
+    border: var(--buttonColor);
+    background-color: var(--buttonColor);
+}
+
+.input-search {
+    justify-self: left;
+    width: 99%;
+    height: 85%;
+    border-radius: 6px;
+}
+
+.button-clear {
+    justify-self: right;
+    width: 20%;
+    height: 60%;
+    border-radius: 6px;
+    color: var(--whiteColor);
+    background-color: var(--gray);
+}
+
+.pokemon-card {
+    width: 95%;
+    height: 95%;
+    display: flex;
+}
+
+p {
+    font-size: 8px;
+    padding: 0;
+    margin: 0;
+}
+
+.tag {
+    align-self: flex-start;
+}
+
+.value {
+    text-align: right;
+}
+
+.img {
+    place-self: center;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 16px;
+}
+
+.img-1 {
+    place-self: center;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 24px;
+}
+
+.hiden {
+    display: none;
+}
