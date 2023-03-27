@@ -54,7 +54,7 @@ main {
 }
 
 * {
-    border: solid;
+    /* border: solid; */
 }
 
 /* flex */
@@ -171,6 +171,7 @@ main {
     width: 95%;
     height: 95%;
     display: flex;
+    border: solid;
 }
 
 p {
@@ -180,10 +181,12 @@ p {
 }
 
 .tag {
+    margin-left: 8px;
     align-self: flex-start;
 }
 
 .value {
+    margin-right: 8px;
     text-align: right;
 }
 
